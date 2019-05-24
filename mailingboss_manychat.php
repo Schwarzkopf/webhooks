@@ -5,8 +5,8 @@ $url = 'https://member.mailingboss.com/index.php/lists/xxxxxxxxx/subscribe';
 $data_decoded = json_decode(file_get_contents('php://input'), true);
 
 $data = array(
-    'FNAME' => $data_decoded['first_name'],
-    'LNAME' => $data_decoded['last_name'],
+	'FNAME' => $data_decoded['first_name'],
+    	'LNAME' => $data_decoded['last_name'],
 	'EMAIL' => $data_decoded['custom_fields']['user_email'],
 	'GDPR' => 'yes',
 );
